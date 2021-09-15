@@ -1,0 +1,106 @@
+<!-- index.html -->
+<!doctype html>
+<html>
+<head>
+    <link rel="shortcut icon" href="#">
+    <title>Create tour</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+    <!-- load bootstrap via CDN -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js
+"></script> <!-- load jquery via CDN -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+    <script src="/js/tour_utils.js">
+    </script> <!-- load our javascript file -->
+</head>
+
+<body>
+    <div class="col-sm-6 col-sm-offset-3">
+
+        <h1>add new tour</h1>
+
+        <!-- OUR FORM -->
+        <form id="create_tour_id" name="create_tour_id">
+            <!-- ID  -->
+            <div id="name-group" class="form-group">
+                <label for="id">ID</label>
+                <input type="text" class="form-control" name="id_field" id="id_field" onchange="only_letters()" placeholder="write id here"
+                    required>
+                <!-- errors will go here -->
+            </div>
+
+            <!-- START DATE -->
+            <div id="name-group" class="form-group">
+                <label for="start date">Start date</label>
+                <input type="date" class="form-control" name="date" id="start_date" onchange="check_date()" placeholder="Choose a date"
+                    required>
+                <!-- errors will go here -->
+            </div>
+
+            <!-- duration -->
+            <div id="name-group" class="form-group">
+                <label for="duration">Duration</label>
+                <input type="number" class="form-control" name="duration" id="duration" placeholder="Enter duration"
+                    required>
+                <!-- errors will go here -->
+            </div>
+
+            <!-- price -->
+            <div id="name-group" class="form-group">
+                <label for="price">price</label>
+                <input type="number" class="form-control" name="price" id="price"
+                    placeholder="Enter price" required>
+                <!-- errors will go here -->
+            </div>
+            
+                <!-- GUIDE NAME -->
+                <div id="name-group" class="form-group">
+                    <label for="guide_name">Guide name</label>
+                    <input type="guide_name" class="form-control" name="guide_name" id="guide_name" onchange="only_letters()" placeholder="Enter guide name"
+                        required>
+                    <!-- errors will go here -->
+                </div>
+
+                <!-- EMAIL -->
+            <div id="email-group" class="form-group">
+                <label for="email">Email</label>
+                <input type="text" class="form-control" name="email" id="email" placeholder="rudd@avengers.com"
+                required>
+                
+                <!-- errors will go here -->
+            </div>
+
+            <!-- PHONE -->
+            <div id="name-group" class="form-group">
+                <label for="cellular">Cellular</label>
+                <input type="number" class="form-control" name="cellular" id="cellular" placeholder="Enter phone number"
+                    required>
+                <!-- errors will go here -->
+            </div> 
+            
+            
+            <!-- city's path name -->
+            <!-- <div id="name-group" class="form-group">
+                <label for="city">name of city path</label>
+                <input type="text" class="form-control" name="city_name" id="city_name" placeholder="Enter city name"
+                    required>
+                errors will go here
+            </div>  -->
+        
+
+             <!-- country's path name -->
+             <!-- <div id="name-group" class="form-group">
+                <label for="country">name of country path</label>
+                <input type="text" class="form-control" name="country_name" id="country_name" placeholder="Enter country name"
+                    required> -->
+                <!-- errors will go here -->
+            <!-- </div>  -->
+        
+            
+         <button type="submit" class="btn btn-success">Submit <span class="fa fa-arrow-right"></span></button>
+
+        </form>
+
+    </div>
+</body>
+
+</html>
